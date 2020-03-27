@@ -1,0 +1,109 @@
+//----- Fonts -----//
+$font-family: 'Open Sans', sans-serif;//Open Sans - imported in _layout.scss
+
+//----- Colors -----//
+//Grayscale
+$color-white: #fff;
+$color-grayscale-1: #f7f7f7;
+$color-grayscale-2: #e2e2e2;
+$color-grayscale-3: #ccc;
+$color-grayscale-4: #777;
+$color-grayscale-5: #333;
+$color-black: #000;
+
+//Brand
+$color-primary: #439a86;
+$color-secondary: #9a9a9a;
+
+//Semantic
+$color-blue: #286483;
+$color-green: #33993c;
+$color-orange: #ff8c63;
+$color-purple: #8f4dae;
+$color-red: #c81d20;
+$color-yellow: #fffb19;
+
+//$body-color-text: $color-grey-3;//($color-grey-3)
+
+//-----  Screen Breaks and Widths -----//
+
+//Content and Text Width
+$global-content-width: 1200px !default;//The page stops growing at 1200px
+$global-blog-width: 600px !default;//The max-width of text boxes for improved readability
+
+//Break Points
+$phone: 'all and (max-width: 470px)' !default;
+$tablet: 'all and (min-width: 680px)' !default;
+$tablet-large: 'all and (min-width: 708px)' !default;//For tables
+$desktop: 'all and (min-width: 890px)' !default;
+
+//-----  Spacing -----//
+$margin-padding-standard: 1rem;
+$padding-underline: 0.25rem;//Offsets border applied (0.25rem)
+$margin-center: 0 auto;
+
+//----- Shadows -----//
+$shadow: 0 0 15px $color-black;//generic shadow
+$shadow-contrast: 0 2px 4px $color-black;//helps with seeing the object on top of images
+$shadow-input: 0 0 10px;//primarily used for input focus
+$shadow-box: 0 2px 4px 0 rgba(14, 30, 37, 0.12);
+
+//----- Animations -----//
+$animation-hover-buttons: background 0.1s ease-in;
+$animation-transition: all 0.2s ease-in-out !default;
+
+//----- Borders -----//
+$border-1: 1px solid;
+$border-2: 2px solid;
+$border-radius: 2px;
+
+//----- Grid -----//
+$grid-gutter: 1rem;
+
+/* These variables are for changes to various
+elements that remain constant (such as images/logos/branding)
+There are many component specific variables in settings. */
+
+/* ----- BODY ----- *///:layout.scss
+$body-margin-top: 0;//height to offset for header ($header-height)
+
+/* ----- GRID ----- *///:grid.scss
+$grid-divider-thickness: 5px;//thickness of dividers(5px)
+$grid-image-minimum: 300px;//the minimum size that an image can be in the feed (300px)
+$grid-image-minimum-mobile: 100%;
+
+/* ----- FOOTERS ----- *///:footer.scss
+$footer-width: $global-content-width;//($global-content-width)
+
+//----- TYPOGRAPHY -----//
+//Font Sizes
+$font-size-description: 0.9rem;
+$font-size-h1: 3.5rem;
+$font-size-h2: 2.5rem;
+$font-size-h3: 2rem;
+$font-size-p1: 1.7rem;
+$font-size-p2: 1.25rem;
+$font-size-p3: 0.75rem;
+
+//Font Weights
+$font-weight-links: bold;
+$font-weight-header: 400;
+$font-weight-logo: 600;
+
+//----- HEADER -----//
+
+//Navigation Bar Height
+$header-height: 4rem;
+$sub-header-height: 3rem;
+$nav-border-size: 4px solid;
+
+//Navigation Link Width
+$nav-link-font-size: 1.2rem;
+$nav-logo-font-size: 2rem;
+$nav-link-spacing: calc(#{$margin-padding-standard} / 2);
+
+//Navigation Colors
+$nav-color-theme: $color-grayscale-2;
+$nav-text-color: $color-grayscale-2;
+$nav-background-color: rgba(34, 34, 34, 0.95);
+$nav-animation-time: border 0.2s ease-out;

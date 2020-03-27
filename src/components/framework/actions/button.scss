@@ -1,0 +1,27 @@
+@import '../core/core';//dependent on core
+@import './button-theme-default';
+
+//Button Specific Variables
+$button-padding: calc(#{$margin-padding-standard} / 2);
+
+.button {
+	border: 0;
+
+	border-radius: $border-radius;
+	cursor: pointer;
+	display: inline-block;
+	font-size: $font-size-description;
+	font-weight: $font-weight-links;
+	padding: $button-padding $margin-padding-standard;
+	text-decoration: none;
+
+	&:not(.disabled):hover,
+	&:not(.disabled):focus {
+		transition: $animation-hover-buttons;
+	}
+
+	&.disabled {
+		cursor: not-allowed;
+		opacity: 0.25;
+	}
+}

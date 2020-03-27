@@ -1,0 +1,27 @@
+@import '../core/theme';//dependent on core
+
+//Button Theme Default
+@mixin button-color($color, $color-text) {
+	background: $color;
+	color: $color-text;
+
+	&:not(.disabled):hover,
+	&:not(.disabled):focus {
+		background: lighten($color, 10%);
+	}
+}
+
+.button {
+	@include button-color($color-primary, $color-grayscale-1);
+
+	&.button--black { @include button-color($color-black, $color-grayscale-1); }
+	&.button--blue { @include button-color($color-blue, $color-grayscale-1); }
+	&.button--green { @include button-color($color-green, $color-grayscale-1); }
+	&.button--gray { @include button-color($color-grayscale-4, $color-grayscale-1); }
+	&.button--orange { @include button-color($color-orange, $color-grayscale-1); }
+	&.button--primary { @include button-color($color-primary, $color-grayscale-1); }
+	&.button--purple { @include button-color($color-purple, $color-grayscale-1); }
+	&.button--red { @include button-color($color-red, $color-grayscale-1); }
+	&.button--yellow { @include button-color($color-yellow, $color-grayscale-1); }
+	&.button--white { @include button-color($color-grayscale-1, $color-grayscale-4); }
+}
